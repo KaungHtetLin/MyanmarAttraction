@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <xyz.aungpyaephyo.padc.myanmarattractions.components.MMTextView
+            android:id="@+id/lbl_login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:drawablePadding="@dimen/margin_medium"
+            android:drawableRight="@drawable/ic_clear_24dp"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="@dimen/margin_medium_2"
+            android:textColor="@color/text_white_ish" />
+
+        <xyz.aungpyaephyo.padc.myanmarattractions.components.MMEditText
+            android:id="@+id/et_login_email"
+            android:layout_width="@dimen/input_box_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_login_title"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginRight="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:hint="@string/msg_enter_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_secondary_text"
+            android:textSize="@dimen/text_regular_2x">
+
+            <requestFocus />
+
+        </xyz.aungpyaephyo.padc.myanmarattractions.components.MMEditText>
+
+
+        <xyz.aungpyaephyo.padc.myanmarattractions.components.MMEditText
+            android:id="@+id/et_login_password"
+            android:layout_width="@dimen/input_box_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_login_email"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginRight="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:drawablePadding="@dimen/margin_medium"
+            android:drawableRight="@drawable/ic_visibility_24dp"
+            android:hint="@string/msg_enter_password_register"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_secondary_text"
+            android:textSize="@dimen/text_regular_2x" />
+
+
+        <xyz.aungpyaephyo.padc.myanmarattractions.components.MMButton
+            android:id="@+id/btn_login"
+            style="@style/AccentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_login_password"
+            android:layout_margin="@dimen/margin_medium_2"
+            android:text="@string/lbl_login_action" />
+
+        <xyz.aungpyaephyo.padc.myanmarattractions.components.MMTextView
+            android:id="@+id/lbl_forgot_password"
+            android:layout_width="@dimen/input_box_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_login"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginRight="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:autoLink="all"
+            android:linksClickable="true"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/accent"
+            />
+
+        <xyz.aungpyaephyo.padc.myanmarattractions.components.MMTextView
+            android:id="@+id/lbl_toregister"
+            android:layout_width="@dimen/input_box_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_forgot_password"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginRight="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium_3"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/accent"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
